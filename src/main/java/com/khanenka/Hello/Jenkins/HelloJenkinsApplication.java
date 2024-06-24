@@ -9,13 +9,14 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication
 public class HelloJenkinsApplication extends SpringBootServletInitializer {
 
-	public static void main(String[] args) {
-		SpringApplication.run(HelloJenkinsApplication.class, args);
-	}
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder){
-		return builder.sources(HelloJenkinsApplication.class);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(HelloJenkinsApplication.class, args);
+    }
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(HelloJenkinsApplication.class);
+    }
 
 
 }
